@@ -1,0 +1,519 @@
+
+
+@font-face {
+font-family: 'Futurak';
+src: url('fonts/Futurak.ttf') format('truetype');
+}
+
+@font-face {
+font-family: 'butlerbold';
+src: url('fonts/butlerbold.otf') format('truetype');
+}
+@font-face {
+font-family: 'inter';
+src: url('fonts/Inter_18pt-Regular.ttf') format('truetype');
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+    /* display: flex !important; */
+    /* justify-content: stretch !important; */
+    
+    /* overflow-x: hidden; */
+    background-color: black;
+}
+#container{
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: solid 10px purple; */
+}
+.topheader{
+    /* border-color: blue; */
+    /* border: 1px solid blue; */
+display: flex;
+align-items: center;
+justify-content:space-between;
+width: 100%;
+height: 93px;
+background-color: black;
+padding-left: 100px;
+padding-right: 100px;
+}
+.hamburgermenu{
+display: none !important;
+/* color: yellow; */
+}
+.topheader img{
+width: 165px;
+height: auto;
+}
+.topheaderrightpart{
+display: flex;
+align-items: center;
+}
+.topheader a{
+padding-right: 36px;
+font-size: 16px;
+font-weight: 400;
+font-family: inter;
+text-decoration: none;
+color: white;
+}
+.carousel-inner {
+    height: auto;
+  }
+.carousel-item img {
+    max-height: 500px;
+    height: auto;
+    width: auto;
+    margin: auto;
+    /* object-fit: contain; */
+}
+
+#WelcomeDiv{
+    /* height: auto; */
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+#WelcomeDiv img{
+    background-color: white;
+    /* display: none; */
+}
+
+.imagesandbuttons
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.imageandbutton{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.button{
+    margin-top: 30px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 133px;
+    height: 45px;
+    border-radius: 25px;
+    border: solid 1px white;
+    color: white;
+    padding:10px;
+    
+}
+
+
+#carouselforsmallscreens{
+    display: none;
+}
+
+@media screen and (max-width:768px){
+    #carouselforsmallscreens{
+        display: block;
+    }
+    .imagesandbuttons{
+        /* background-color: white; */
+        display: none;
+    }
+
+}
+
+
+
+
+
+
+
+.Get_a_Franchise_Button{
+margin-left: 30px;
+display: flex;
+align-items: center;
+justify-content: center;
+width: 133px;
+height: 45px;
+border-radius: 25px;
+border: solid 1px white;
+color: white;
+}
+.Order_Online_Button{
+margin-left: 15px;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 10px;
+width: 133px;
+height: 45px;
+border-radius: 25px;
+/* border: solid 1px white; */
+color: white;
+font-size: 14px;
+/* background-color: red; */
+}
+
+@media screen and (max-width:1066px) {
+.Get_a_Franchise_Button{
+    display: none;
+}
+
+}
+
+@media screen and (max-width:876px) {
+.topheader a{
+    display: none;
+}
+.hamburgermenu{
+    display: block !important;
+    color: white;
+}
+.topheader{
+    justify-content: space-between;
+}
+.topheader img{
+    order: 1;
+}
+.topheaderrightpart{
+    order: 2;
+}
+
+}
+
+
+
+
+
+.restaurant-franchises-section{
+background-color: rgb(33, 37, 41);
+/* background-color: rgba(255, 255, 255, 0.06); */
+color: white;
+/* width: 500px; */
+/* height: 500px; */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+/* font-family: futurak; */
+/* font-weight: 400; */
+}
+
+.row_of_restaurant_franchises_section{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.first_heading_of_section{
+font-family: Futurak;
+font-size: 52px;
+/* font-family: butlur; */
+font-weight: 400;
+/* font-style: normal; */
+line-height: 62px;
+letter-spacing: -0.25px;
+
+}
+.second_heading_of_section{
+font-family: butlerbold;
+font-size: 48px;
+font-weight: 500;
+letter-spacing: -0.25px;
+line-height: 60px;
+}
+
+.textandimagecontainerofrestaurant-franchises-section{
+display: flex;
+gap: 50px;
+/* margin-left: 20px; */
+/* margin: auto; */
+
+}
+.textside{
+margin-left: 50px;
+display: flex;
+flex-direction: column;
+/* align-items: center; */
+justify-content: center;
+}
+.imageside{
+max-width: 100%;
+margin-right: 50px;
+}
+
+.imageside img {
+max-width: 100%; /* Makes the image responsive */
+height: auto; /* Maintains aspect ratio */
+object-fit: cover; /* Ensures the image covers its area */
+border-radius: 10px; /* Optional: Adds rounded corners */
+}
+/* 
+.btn{
+--bs-btn-border-width: 1px;
+} */
+
+.GetDirectionsButton{
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 10px;
+width: 175px;
+height: 50px;
+border-radius: 50px;
+border: 1px solid rgba(255, 255, 255, 0.3);
+font-family: 'Poppins';
+font-weight: 500;
+font-size: 14px;
+line-height: 21px;
+/* padding-top: 15px; */
+margin-top: 40px;
+text-align: center;
+}
+.arrowcoveringofgetdirectionbutton{
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: white;
+width: 30px;
+height: 30px;
+border-radius: 50%;
+}
+
+#ExpressFranchisesSection{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#ExpressFranchisesSectionFirstHeading{
+    font-family: Futurak;
+    font-size: 52px;
+}
+#ExpressFranchisesSectionSecondHeading{
+    font-family: butlerbold;
+    font-size: 48px;
+}
+
+.ExpressFranchisesSectionRow{
+    display: flex;
+    justify-content:stretch;
+    gap: 50px;
+    /* padding: 20px 50px; */
+    
+}
+.ExpressFranchisesSectionColumn{
+    
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* gap: 50px; */
+}
+.ExpressFranchisesSectionColumn img{
+    width: 100%;  /* Makes the image responsive */
+    height: 250px;
+    max-width: 350px; /* Ensures the image doesn't get too large */
+    min-width: 10px; /* Ensures the image doesn't shrink too much */
+    /* object-fit: cover; Ensures the image fills the space without distortion */
+    
+}
+.ExpressFranchisesSectionHeadingUnderImage{
+    /* background-color: brown; */
+}
+.ExpressFranchisesSectionAddressUnderImage{
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+
+#VillageFranchiseSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    /* background-color: brown; */
+    color: white;
+    /* width: 99%; */
+}
+#VillageFranchiseHeading{
+    font-family: Futurak;
+    font-size: 52px;
+}
+#VillageFranchise2ndHeading{
+    font-family: butlerbold;
+    font-size: 48px;
+    
+}
+#VillageFranchiseRow{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 50px;
+    height: 370px;
+}
+
+
+#VillageFranchiseRow img{
+    /* height: 100%; */
+    /* width: auto; */
+    /* width: 90%; */
+    padding-left: 150px;
+    /* flex-shrink: 1; */
+    max-width: 600px;
+    height: auto;
+}
+
+#VillageFranchiseTextArea{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+@media screen and (max-width:768px) {
+    #VillageFranchiseRow{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #VillageFranchiseRow img{
+        padding-left: 0px;
+    }
+    #VillageFranchiseImage{
+        flex-direction: row;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background-color: aqua; */
+        /* border: 1px solid yellow; */
+    }
+
+    #VillageFranchiseRow{
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        /* gap: 0px; */
+    }
+    #VillageFranchiseTextArea{
+        /* display: flex; */
+        /* flex-direction: column; */
+        align-items: center;
+        justify-content: center;
+        /* background-color: yellow; */
+        text-align: center;
+    }
+}
+
+#OpeningSoonSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+#OpeningSoonSectionHeading{
+    font-family: Futurak;
+    font-size: 52px;
+}
+#OpeningSoonSection2ndHeading{
+    font-family: butlerbold;
+    font-size: 48px;
+    /* background-color: yellow; */
+    text-align: center;
+}
+
+.OpeningSoonSectionRow{
+    display: flex;
+    gap: 20px;
+    /* border: solid 1px blue; */
+    justify-items:space-evenly;
+}
+.box{
+    border-radius: 10px;
+    margin: 50px 0px;
+    max-height: 275px;
+    background-color: white;
+    /* padding: 20px; */
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 600px;
+
+}
+.OpeningSoonOpeningSoonText{
+    line-height: 12px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+.OpeningSoonSaltnPepperExpressText{
+    text-align: center;
+}
+.OpeningSoon3rdLineText{
+    text-align: center;
+}
+#OpeningSoonSaltnPepper{
+    font-size: 24px;
+    line-height: 30px;
+}
+
+
+
+
+#footersection{
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    max-width: 100%;
+    background-color: black;
+    gap: 50px;
+}
+#footersectionpart1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+}
+#footersectionpart1logo{
+
+}
+#footersectionpart1paragraph{
+    text-align: justify;
+}
+#footersectionpart1termsandpolicy{
+    display: flex;
+    gap: 20px;
+}
+#footersectionSiteLinks{
+    max-width: 275px;
+}
+
+#footersectionContactUs{
+    max-width: 275px;
+}
+#footersectionappstoresimages{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
