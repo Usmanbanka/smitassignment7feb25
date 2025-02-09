@@ -273,6 +273,8 @@ display: flex;
 gap: 50px;
 /* margin-left: 20px; */
 /* margin: auto; */
+margin-top: 30px;
+margin-bottom: 30px;
 
 }
 .textside{
