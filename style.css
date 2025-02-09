@@ -378,6 +378,7 @@ border-radius: 50%;
 
 
 
+
 #VillageFranchiseSection{
     display: flex;
     flex-direction: column;
@@ -480,6 +481,22 @@ border-radius: 50%;
     /* border: solid 1px blue; */
     justify-items:space-evenly;
 }
+
+@media screen and (max-width:640px)  { 
+
+    .OpeningSoonSectionRow{
+        flex-direction: column;
+        justify-content:start;
+        gap: 1px;
+        /* padding: 20px 50px; */
+        
+    }
+
+    
+} 
+
+
+
 .box{
     border-radius: 10px;
     margin: 50px 0px;
